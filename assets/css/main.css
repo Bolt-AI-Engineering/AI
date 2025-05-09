@@ -2679,17 +2679,18 @@ input[type="checkbox"] {
 }
 
 .custom-service-list {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding-left: 2em;
-  list-style: disc;
+	max-width: 1000px;
+	margin: 0 auto;		/* Zentriert den gesamten Block */
+	padding-left: 2em;
+	list-style: disc;
+	text-align: left;       /* Wichtig: sorgt für linksbündigen Text */
 }
 
 .custom-service-list li {
-  list-style-position: outside;
-  margin-bottom: 1em;
-  padding-left: 0.5em;
-  text-indent: -0.5em;
-  line-height: 1.6;
+	list-style-position: outside;
+	margin-bottom: 1em;
+	padding-left: 0.5em;
+	text-indent: -0.5em; /* hängt Umbrüche korrekt unter den Text, nicht unter das Bullet*/
+	line-height: 1.6;
 }
 
