@@ -2680,16 +2680,16 @@ input[type="checkbox"] {
 
 
 /* ----- der kram für die aufzählungen ----- */
-.custom-service-list {
+.section-centered-content {
   max-width: 900px;
   margin: 0 auto;
+  padding: 0 2em;
   text-align: left;
 }
 
 .clean-list {
   list-style-type: disc;
   padding-left: 1.5em;
-  margin: 0;
 }
 
 .clean-list li {
@@ -2697,3 +2697,4 @@ input[type="checkbox"] {
   line-height: 1.6;
   text-align: left;
 }
+
