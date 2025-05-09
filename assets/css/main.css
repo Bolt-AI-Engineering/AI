@@ -2678,3 +2678,22 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
+.custom-service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 1em;
+  line-height: 1.6;
+  text-align: left;
+  padding-left: 1.5em;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 961px) {
+  .custom-service-list li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
