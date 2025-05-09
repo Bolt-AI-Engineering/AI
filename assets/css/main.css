@@ -2690,7 +2690,9 @@ input[type="checkbox"] {
   overflow-x: auto;
 }
 
-.custom-service-list li {
-margin-bottom: 0.75em;
+@media screen and (min-width: 961px) {
+	.custom-service-list li {
+		margin-bottom: 0.75em;
+	}
 }
 
