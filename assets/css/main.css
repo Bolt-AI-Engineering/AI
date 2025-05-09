@@ -2675,24 +2675,3 @@ input[type="checkbox"] {
   font-weight: bold;
   cursor: pointer;
 }
-
-
-/* ----- der kram für die aufzählungen ----- */
-.section-centered-content {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 2em;
-  text-align: left;
-}
-
-.clean-list {
-  list-style-type: disc;
-  padding-left: 1.5em;
-}
-
-.clean-list li {
-  margin-bottom: 1em;
-  line-height: 1.6;
-  text-align: left;
-}
-
