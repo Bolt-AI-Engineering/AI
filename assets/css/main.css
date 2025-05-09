@@ -2643,3 +2643,10 @@ input[type="checkbox"] {
   vertical-align: middle;
   transform: scale(1.2); /* optional: macht die Box größer */
 }
+
+}
+
+.custom-bordered-image img {
+  border: 2px solid #e0e0e0; /* sehr hellgrauer Rahmen */
+  transition: none;
+}
