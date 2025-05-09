@@ -2679,20 +2679,17 @@ input[type="checkbox"] {
 }
 
 .custom-service-list {
-  margin: 0 auto;
   max-width: 1000px;
-  text-align: left;
-  list-style-position: outside;
-  padding-left: 1.5em;
-  font-size: 1em;
-  line-height: 1.6;
-  white-space: nowrap;
-  overflow-x: auto;
+  margin: 0 auto;
+  padding-left: 2em;
+  list-style: disc;
 }
 
-@media screen and (min-width: 961px) {
-	.custom-service-list li {
-		margin-bottom: 0.75em;
-	}
+.custom-service-list li {
+  list-style-position: outside;
+  margin-bottom: 1em;
+  padding-left: 0.5em;
+  text-indent: -0.5em;
+  line-height: 1.6;
 }
 
