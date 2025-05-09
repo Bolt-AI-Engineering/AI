@@ -184,10 +184,11 @@
 			<div id="footer">
 
 				<!-- Copyright -->
+
 					<ul class="copyright" style="font-size: 0.9em;">
-						<li>&copy; Bolt-AI</li>
-					   	<li><a href="privacy.html">Privacy Policy</a></li>
-					    	<li><a href="legal-notice.html">Legal Notice</a></li>
+					  <li>&copy; Bolt-AI</li>
+					  <li><a href="#" onclick="openModal('privacy-modal')">Privacy Policy</a></li>
+					  <li><a href="#" onclick="openModal('legal-modal')">Legal Notice</a></li>
 					</ul>
 
 			</div>
@@ -201,5 +202,46 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+		<!-- Privacy Modal -->
+			<div id="privacy-modal" class="modal">
+			  <div class="modal-content">
+			    <span class="close" onclick="closeModal('privacy-modal')">&times;</span>
+			    <h2>Privacy Policy</h2>
+			    <p>This website does not use cookies or trackers. Personal data submitted via the contact form is used solely for responding to inquiries and is never shared with third parties.</p>
+			  </div>
+			</div>
+			
+		<!-- Legal Notice Modal -->
+			<div id="legal-modal" class="modal">
+			  <div class="modal-content">
+			    <span class="close" onclick="closeModal('legal-modal')">&times;</span>
+			    <h2>Legal Notice</h2>
+			    <p>Responsible for content: Bolt-AI Engineering<br>Email: info@bolt-ai.de</p>
+			  </div>
+			</div>
+
+		<script>
+		function openModal(id) {
+		  document.getElementById(id).style.display = "block";
+		}
+		
+		function closeModal(id) {
+		  document.getElementById(id).style.display = "none";
+		}
+		
+		window.onclick = function(event) {
+		  ['privacy-modal', 'legal-modal'].forEach(id => {
+		    const modal = document.getElementById(id);
+		    if (event.target == modal) {
+		      modal.style.display = "none";
+		    }
+		  });
+		}
+		</script>
+		
+
+
 	</body>
+
+	
 </html>
